@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blanco: #fff;
+  --color-negro: #212429;
+  --bg-color-negro-scroll: #21242967;
+  --bg-color-negro-scroll-hover: #21242993;
+
+  --bg-color-one: #03045e;
+  --bg-color-two: #0077b6;
+  --bg-color-three: #00b4d8;
+  --bg-color-four: #90e0ef;
+  --bg-color-five: #caf0f8;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--bg-color-negro-scroll);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bg-color-negro-scroll-hover);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#header {
+  width: 100%;
+}
+
+#header .header__nav {
+  width: 100%;
+  /* height: 100px; */
+  padding: 10px;
+  background-color: var(--bg-color-one);
+  overflow: hidden;
+  color: var(--color-blanco);
+}
+
+#header .header__nav ul {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+}
+
+#header .header__nav ul li {
+  list-style: none;
+}
+
+#header .header__nav ul li a {
+  color: var(--color-blanco);
+}
+
+#header .header__nav ul .ul__container__nav__column__one {
+  display: flex;
+  width: 100%;
+  place-content: center;
+  place-items: center;
+  align-items: center;
+}
+
+#header .header__nav ul .ul__container__nav__column__one li {
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid var(--bg-color-five);
+}
+
+#header .header__nav ul .ul__container__nav__column__two {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 100%;
+}
+
+#header .header__nav ul .ul__container__nav__column__two li::first-letter {
+  text-transform: uppercase;
+}
+
+#header .header__nav ul .ul__container__nav__column__two li a:hover {
+  cursor: pointer;
+  color: var(--bg-color-five);
+  text-decoration: underline;
+}

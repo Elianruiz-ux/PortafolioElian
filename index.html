@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="header__nav">
+        <ul>
+          <div class="ul__container__nav__column__one">
+            <li>
+              <a href="#"><img src="./assets/foto-elian.png" alt="foto" /></a>
+            </li>
+          </div>
+          <div class="ul__container__nav__column__two">
+            <li>
+              <a href="#sobremi">sobre mí</a>
+            </li>
+            <li>
+              <a href="#conocimiento">conocimiento</a>
+            </li>
+            <li>
+              <a href="#experiencia">experiencia</a>
+            </li>
+            <li>
+              <a href="#proyectos">proyectos</a>
+            </li>
+            <li>
+              <a href="#contacto">contacto</a>
+            </li>
+            <li>
+              <button class="li__button__menu">menu hamburguesa</button>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="sobremi">
+        <div class="container__sobremi">
+          <img class="img__foto" src="./assets/foto-elian.png" alt="foto" />
+          <p class="p__descripcion">descripcion</p>
+        </div>
+      </section>
+      <section id="conocimiento">
+        <div class="container__conocimiento">
+          <div class="container__conocimiento__div">
+            <img src="" alt="" />
+            <p>html</p>
+          </div>
+          <div class="container__conocimiento__div">
+            <img src="" alt="" />
+            <p>css</p>
+          </div>
+          <div class="container__conocimiento__div">
+            <img src="" alt="" />
+            <p>javascript</p>
+          </div>
+        </div>
+      </section>
+      <section id="experiencia">
+        <ul>
+          <li>
+            <div class="container__experiencia">
+              <p class="container__experiencia__nombreEmpresa"></p>
+              <p class="container__experiencia__cantidadDiaMesAnio"></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="proyectos">
+        <ul class="ul__proyectos">
+          <li class="proyecto">
+            <div class="proyecto__container">
+              <img src="" alt="proyecto1" class="proyecto__container__img" />
+              <p class="proyecto__container__p"></p>
+            </div>
+          </li>
+          <li class="proyecto">
+            <div class="proyecto__container">
+              <img src="" alt="proyecto2" class="proyecto__container__img" />
+              <p class="proyecto__container__p"></p>
+            </div>
+          </li>
+          <li class="proyecto">
+            <div class="proyecto__container">
+              <img src="" alt="proyecto3" class="proyecto__container__img" />
+              <p class="proyecto__container__p"></p>
+            </div>
+          </li>
+          <li class="proyecto">
+            <div class="proyecto__container">
+              <img src="" alt="proyecto4" class="proyecto__container__img" />
+              <p class="proyecto__container__p"></p>
+            </div>
+          </li>
+          <li class="proyecto">
+            <div class="proyecto__container">
+              <img src="" alt="proyecto5" class="proyecto__container__img" />
+              <p class="proyecto__container__p"></p>
+            </div>
+          </li>
+          <li class="proyecto">
+            <div class="proyecto__container">
+              <img src="" alt="proyecto6" class="proyecto__container__img" />
+              <p class="proyecto__container__p"></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="contacto">
+        <form action="post" id="form">
+          <div class="container__label_button">
+            <label for="nombre__form"
+              >nombre: <span class="label__span">*</span></label
+            >
+            <input type="text" name="nombre" id="nombre__form" required />
+          </div>
+          <div class="container__label_button">
+            <label for="correo__form"
+              >correo electrónico: <span class="label__span">*</span></label
+            >
+            <input type="email" name="email" id="correo__form" required />
+          </div>
+          <div class="container__label_button">
+            <label for="celular__form"
+              >número celular: <span class="label__span">*</span></label
+            >
+            <input type="tel" name="celular" id="celular__form" required />
+          </div>
+          <div class="container__submit">
+            <input type="submit" id="#submit__form" value="Enviar" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer id="footer"><section></section></footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
