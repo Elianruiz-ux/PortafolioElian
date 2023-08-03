@@ -8,11 +8,12 @@
   </head>
   <body>
     <header id="header">
-      <nav class="header__nav">
+      <nav class="header__nav" id="header__nav">
         <ul>
           <div class="ul__container__nav__column__one">
             <li>
-              <a href="#"><img src="./assets/foto-elian.png" alt="foto" /></a>
+              <!-- <a href="#"><img src="./assets/foto-elian.png" alt="foto" /></a> -->
+              <a href="#">er</a>
             </li>
           </div>
           <div class="ul__container__nav__column__two">
@@ -32,7 +33,9 @@
               <a href="#contacto">contacto</a>
             </li>
             <li>
-              <button class="li__button__menu">menu hamburguesa</button>
+              <button class="li__button__menu">
+                <i class="fa-solid fa-bars"></i>
+              </button>
             </li>
           </div>
         </ul>
@@ -41,22 +44,49 @@
     <main id="main">
       <section id="sobremi">
         <div class="container__sobremi">
-          <img class="img__foto" src="./assets/foto-elian.png" alt="foto" />
-          <p class="p__descripcion">descripcion</p>
+          <div class="container__sobremi__column__one">
+            <div
+              class="container__sobremi__column__one__img"
+              id="container__sobremi__column__one__img"
+            >
+              <img class="img__foto" src="./assets/foto-elian.png" alt="foto" />
+            </div>
+          </div>
+          <div
+            class="container__sobremi__column__two"
+            id="container__sobremi__column__two"
+          >
+            <p class="p__nombre">Hola, me llamo Elian Ruiz.</p>
+            <p class="p__descripcion">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+              cupiditate quam facere maxime neque libero saepe, accusantium illo
+              possimus aut deleniti ullam ad voluptatibus at doloremque, quidem
+              eos corrupti placeat.
+            </p>
+          </div>
         </div>
       </section>
       <section id="conocimiento">
         <div class="container__conocimiento">
-          <div class="container__conocimiento__div">
-            <img src="" alt="" />
+          <div
+            class="container__conocimiento__div"
+            style="--color-logo-icono: #e34c26"
+          >
+            <i class="fa-brands fa-html5"></i>
             <p>html</p>
           </div>
-          <div class="container__conocimiento__div">
-            <img src="" alt="" />
+          <div
+            class="container__conocimiento__div"
+            style="--color-logo-icono: #2965f1"
+          >
+            <i class="fa-brands fa-css3-alt"></i>
             <p>css</p>
           </div>
-          <div class="container__conocimiento__div">
-            <img src="" alt="" />
+          <div
+            class="container__conocimiento__div"
+            style="--color-logo-icono: #f0db4f"
+          >
+            <i class="fa-brands fa-js"></i>
             <p>javascript</p>
           </div>
         </div>
@@ -112,7 +142,7 @@
         </ul>
       </section>
       <section id="contacto">
-        <form action="post" id="form">
+        <form action="#" id="form" method="post">
           <div class="container__label_button">
             <label for="nombre__form"
               >nombre: <span class="label__span">*</span></label
@@ -139,6 +169,10 @@
     </main>
     <footer id="footer"><section></section></footer>
 
+    <script
+      src="https://kit.fontawesome.com/b6ccfb8109.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/index.js"></script>
   </body>
 </html>
